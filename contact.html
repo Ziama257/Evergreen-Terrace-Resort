@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Evergreen-Terrace Resort</title>
+        <meta name="author" content="Zia Ahmad">
+        <meta name="description" content="Maple-Terrace Resort home page">
+        <link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <h1>Evergreen-Terrace Resort</h1>
+            <nav>
+                <a href="/index.html">Home</a>
+                <a href="#">Accommodations</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+        <main>
+        <div id="main-img">
+            <img src="/images/swiss-valley.jpg" alt="a photograph of evergreens in a swiss-valley">
+        </div>
+        <div class ="form-group">
+            <div class="form-left">
+                <h2>Contact Us</h2>
+                <div>
+                    <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!</p>
+                    <p>Required fields marked with a <span id="required">*</span></p>
+                    <img src="/images/swiss-peak.jpg" alt="an image of a swiss mountain peak"> 
+                </div>
+            </div>
+            <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+                <label for="fullName">Full Name<span>*</span></label>
+                <input type="text" id="fullName" name="fullName" required>
+                
+                <label for="email">Email Address<span>*</span></label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number<span>*</span></label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label>Preferred Contact Method<span>*</span></label>
+                <div id="radio-select">
+                    <label for="emailContact">
+                        <input type="radio" id="emailContact" name="contactMethod" value="email" required>
+                        Email
+                    </label>
+                    <label for="phoneContact">
+                        <input type="radio" id="phoneContact" name="contactMethod" value="phone" required>
+                        Phone
+                    </label>
+                </div>
+                
+                <label for="comments">Comments<span>*</span></label>
+                <textarea id="comments" name="comments" rows="4" required></textarea>
+                
+                <input type="submit" value="Submit" class="submit-button">
+            </form>
+        </div>
+        </main>
+        <footer>
+            <p>Copyright ©2023 Evergreen-Terrace Resort</p>
+            <p>This site is for educational purposes only</p>
+        </footer>
+    </body>
+</html>
